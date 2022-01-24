@@ -1,0 +1,31 @@
+1. ifconfig---- to show network connections of a device 
+
+2. netdiscover -r <ip address range>  -- get mac addresses mainly over a ip address range connected to same network.
+
+3. Zenmap software to do scans of a network ip can be an server ip or network connected.
+
+4. arp -a --- shows mac addresses table of router 
+
+5.arpspoof -i <interface name> [ClientIP] [RouterIP]
+ arpspoof -i <interface name> [RouterIP] [ClientIP]
+
+6. arspoofing using bettercap(tool) 
+
+bettercap -iface <inteface name>  ---will allow commands to be written for the tool 
+to get interface name-use ifconfig
+
+-- type help to get all the commands and then help <commandname> to get the information about the command.
+i) net.probe on -- just another way to get connections on a network.
+ii)net.show--will get ip and mac addresses 
+
+arp.spoof on --will turn spoofing on 
+has parameter-
+arp.spoof.fullduplex
+to set parameter use command-- set arp.spoof.fullduplex true
+
+bettercap -iface <inteface name> --caplet <filelocation of .cap file> --- to load commands to save time
+
+
+
+
+	
